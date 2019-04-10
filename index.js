@@ -248,6 +248,8 @@ const SimpleParseSmtpAdapter = (adapterOptions) => {
             subject: 'Reset Password',
             to: getUserEmail(data.user),
         };
+        
+        console.log(data);
 
         if (adapterOptions.templates && adapterOptions.templates.resetPassword) {
 
